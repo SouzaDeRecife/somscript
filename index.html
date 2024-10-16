@@ -118,31 +118,7 @@ poster="IMG_2024-09-19-16-15-40-804.jpg" width= 30px display="block">
     </button>
 </div>
 
-    <script>
-        let video= document.getElementByClassName("vid")[0];
-        function play(){
-            video.play();
-        }
-        function pause(){
-            video.pause();
-        }
-        function stop(){
-            video.pause();
-            video.currentTime(0);
-        }
-        function ff(){
-            video.playbackRate += 0.10;
-        }
-        function rew(){
-            video.playbackRate -= 0.10;
-        }
-        function forward(){
-            video.currentTime -=10;
-        }
-        function rewind(){
-            video.currentTime +=10;
-        }
-    </script>
+    
 
 <ul>
 <li><a href="#Desce">Desce pro fim da página.</a></li>
@@ -182,4 +158,29 @@ Essa é a segunda explicação sobre link.
         x.play();
     }
 </script>
+    <script>
+        let video= document.getElementByClassName("vid")[0];
+        function play(){
+            video.play();
+        }
+        function pause(){
+            video.pause();
+        }
+        function stop(){
+            video.pause();
+            video.currentTime(0);
+        }
+        function ff(){
+            video.playbackRate += 0.10;
+        }
+        function rew(){
+            video.playbackRate -= 0.10;
+        }
+        function forward(){
+            video.currentTime -=10;
+        }
+        function rewind(){
+            video.currentTime +=10;
+        }
+    </script>
 </html>
