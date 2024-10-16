@@ -71,6 +71,9 @@ background-color: yellow;
         display="block";
         widht="250px";
     }
+    .fundo {
+background: "gray";
+    }
 </style>
 <body>
     <div class="clock">
@@ -110,7 +113,8 @@ setInterval(newtime, 1000)
 controls poster="IMG_2024-09-19-16-15-40-804.jpg" width= 250px display="block">
 </video>
     </div>
-    <button>
+    <div class= fundo>
+    <button class= controle>
     <button class= controle onclick= "play()">Play</button>
     <button class= controle onclick= "pause()">Pause</button>
     <button class= controle onclick= "stop()">Stop</button>
@@ -119,7 +123,7 @@ controls poster="IMG_2024-09-19-16-15-40-804.jpg" width= 250px display="block">
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
     </button>
-
+</div>
 <ul>
 <li><a href="#Desce">Desce pro fim da página.</a></li>
 <br></br>
