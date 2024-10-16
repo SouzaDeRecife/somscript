@@ -69,10 +69,7 @@ background-color: yellow;
     .vid {
         margin="10px";
         display="block";
-        widht:"50px";
-    }
-    .fundo {
-background: "gray";
+        widht:"250px";
     }
 
 </style>
@@ -114,12 +111,8 @@ setInterval(newtime, 1000)
 
 poster="IMG_2024-09-19-16-15-40-804.jpg" width: 250px display:"block"
 >
-
-controls poster="IMG_2024-09-19-16-15-40-804.jpg" width= 50px display="block">
-
 </video>
-    </div>
-    <div class= fundo>
+    
     <button class= controle>
     <button class= controle onclick= "play()">Play</button>
     <button class= controle onclick= "pause()">Pause</button>
@@ -128,9 +121,6 @@ controls poster="IMG_2024-09-19-16-15-40-804.jpg" width= 50px display="block">
     <button class= controle onclick= "rew()">Rew</button>
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
-    </button>
-</div>
-
 
     <script>
         let video= document.getElementByClassName("vid")[0];
@@ -157,9 +147,6 @@ controls poster="IMG_2024-09-19-16-15-40-804.jpg" width= 50px display="block">
             video.currentTime +=10;
         }
     </script>
-
-=======
->>>>>>> 26c74a27c32a64ccf595ff9b2f356518e1c54f6e
 <ul>
 <li><a href="#Desce">Desce pro fim da página.</a></li>
 <br></br>
