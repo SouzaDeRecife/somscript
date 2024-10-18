@@ -123,7 +123,7 @@ margin: 30px>
 
     <br></br>
     
-    <button class= "videoscreen" onclick= "play()">Play</button>
+    <button class= controle onclick= "play()">Play</button>
     <button class= controle onclick= "pause()">Pause</button>
     <button class= controle onclick= "stop()">Stop</button>
     <button class= controle onclick= "ff()">FF</button>
@@ -131,30 +131,7 @@ margin: 30px>
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
         <script>
-        let video= document.getElementByClassName("videoscreen")[0];
-        function play(){
-            video.play();
-        }
-        function pause(){
-            video.pause();
-        }
-        function stop(){
-            video.pause();
-            video.currentTime(0);
-        }
-        function ff(){
-            video.playbackRate += 0.10;
-        }
-        function rew(){
-            video.playbackRate -= 0.10;
-        }
-        function forward(){
-            video.currentTime -=10;
-        }
-        function rewind(){
-            video.currentTime +=10;
-        }
-    </script>
+        
 
 <br></br>
 <div>
@@ -196,5 +173,30 @@ Esse link é para navegação dentro da página.
 
 <h2><a name="segunda">Sobe.</a></h2>
 Essa é a segunda explicação sobre link.   
+
+let video= document.getElementByClassName("videoscreen")[0];
+        function play(){
+            video.play();
+        }
+        function pause(){
+            video.pause();
+        }
+        function stop(){
+            video.pause();
+            video.currentTime(0);
+        }
+        function ff(){
+            video.playbackRate += 0.10;
+        }
+        function rew(){
+            video.playbackRate -= 0.10;
+        }
+        function forward(){
+            video.currentTime -=10;
+        }
+        function rewind(){
+            video.currentTime +=10;
+        }
+</script>
 </body>
 </html>
