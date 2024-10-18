@@ -130,7 +130,7 @@ margin: 30px>
     <button class= controle onclick= "rew()">Rew</button>
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
-        <script>
+     
         
 
 <br></br>
@@ -172,9 +172,9 @@ Esse link é para navegação dentro da página.
 </div>
 
 <h2><a name="segunda">Sobe.</a></h2>
-Essa é a segunda explicação sobre link.   
-
-let video= document.getElementByClassName("videoscreen")[0];
+Essa é a segunda explicação sobre link.
+<script>
+    let video= document.getElementByClassName("videoscreen")[0];
         function play(){
             video.play();
         }
@@ -197,6 +197,6 @@ let video= document.getElementByClassName("videoscreen")[0];
         function rewind(){
             video.currentTime +=10;
         }
-</script>
+    </script>
 </body>
 </html>
