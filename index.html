@@ -119,18 +119,42 @@ setInterval(newtime, 1000)
 <br></br>
 <video class= "videoscreen"; src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
 margin: 30px>
-</video>
-
-    <br></br>
-    
-    <button class= controle onclick= "play()">Play</button>
+<button class= controle onclick= "play()">Play</button>
     <button class= controle onclick= "pause()">Pause</button>
     <button class= controle onclick= "stop()">Stop</button>
     <button class= controle onclick= "ff()">FF</button>
     <button class= controle onclick= "rew()">Rew</button>
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
-     
+</video>
+
+    <br></br>
+    
+         <script>
+    let video= document.getElementByClassName("videoscreen")[0];
+        function play(){
+            video.play();
+        }
+        function pause(){
+            video.pause();
+        }
+        function stop(){
+            video.pause();
+            video.currentTime(0);
+        }
+        function ff(){
+            video.playbackRate += 0.10;
+        }
+        function rew(){
+            video.playbackRate -= 0.10;
+        }
+        function forward(){
+            video.currentTime -=10;
+        }
+        function rewind(){
+            video.currentTime +=10;
+        }
+    </script>
         
 
 <br></br>
@@ -173,30 +197,6 @@ Esse link é para navegação dentro da página.
 
 <h2><a name="segunda">Sobe.</a></h2>
 Essa é a segunda explicação sobre link.
-<script>
-    let video= document.getElementByClassName("videoscreen")[0];
-        function play(){
-            video.play();
-        }
-        function pause(){
-            video.pause();
-        }
-        function stop(){
-            video.pause();
-            video.currentTime(0);
-        }
-        function ff(){
-            video.playbackRate += 0.10;
-        }
-        function rew(){
-            video.playbackRate -= 0.10;
-        }
-        function forward(){
-            video.currentTime -=10;
-        }
-        function rewind(){
-            video.currentTime +=10;
-        }
-    </script>
+
 </body>
 </html>
