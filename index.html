@@ -125,15 +125,7 @@ setInterval(newtime, 1000)
 margin: 30px>
 </video>
     <br></br>
-    <button class= controle onclick= "play()">Play</button>
-    <button class= controle onclick= "pause()">Pause</button>
-    <button class= controle onclick= "stop()">Stop</button>
-    <button class= controle onclick= "ff()">FF</button>
-    <button class= controle onclick= "rew()">Rew</button>
-    <button class= controle onclick= "forward()">forward</button>
-    <button class= controle onclick= "rewind()">Rewind</button> 
-    <br></br>
-    <script type= video/javascript>
+    <script>
     
         let video= document.getElementByClassName("videoscreen")[0];
         
@@ -159,7 +151,16 @@ margin: 30px>
         function rewind(){
             video.currentTime +=10;
         }
-    </script>  
+    </script> 
+    <button class= controle onclick= "play()">Play</button>
+    <button class= controle onclick= "pause()">Pause</button>
+    <button class= controle onclick= "stop()">Stop</button>
+    <button class= controle onclick= "ff()">FF</button>
+    <button class= controle onclick= "rew()">Rew</button>
+    <button class= controle onclick= "forward()">forward</button>
+    <button class= controle onclick= "rewind()">Rewind</button> 
+    <br></br>
+     
 
 <br></br>
 <div>
