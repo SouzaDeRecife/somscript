@@ -117,12 +117,12 @@ setInterval(newtime, 1000)
 <h2>Powered by <strong>Feitosa de Souza</strong></h2>
 </div>
 <br></br>
-<video src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
+<video class= "videoscreen" src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
 margin: 30px>
 </video>
 
     <br></br>
-<button ClassName= "videoscreen">
+    
     <button class= controle onclick= "play()">Play</button>
     <button class= controle onclick= "pause()">Pause</button>
     <button class= controle onclick= "stop()">Stop</button>
@@ -131,7 +131,7 @@ margin: 30px>
     <button class= controle onclick= "forward()">forward</button>
     <button class= controle onclick= "rewind()">Rewind</button>
 </button>
-        <script src="./script.js">
+        <script>
         let video= document.getElementByClassName("videoscreen")[0];
         function play(){
             video.play();
