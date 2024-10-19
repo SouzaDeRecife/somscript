@@ -119,18 +119,18 @@ setInterval(newtime, 1000)
 <h2>Powered by <strong>Feitosa de Souza</strong></h2>
 </div>
 <br></br>
-<video Id= "videoscreen"; src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
+<video Id= videoscreen; src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
 margin: 30px; controls>
 </video>
     <br></br>
    <div>
-    <button class= videoscreen onclick= "play()">Play</button>
-    <button class= videoscreen onclick= "pause()">Pause</button>
-    <button class= videoscreen onclick= "stop()">Stop</button>
-    <button class= videoscreen onclick= "ff()">FF</button>
-    <button class= videoscreen onclick= "rew()">Rew</button>
-    <button class= videoscreen onclick= "forward()">forward</button>
-    <button class= videoscreen onclick= "rewind()">Rewind</button> 
+    <button class= videoscreen onclick= play()>Play</button>
+    <button class= videoscreen onclick= pause()>Pause</button>
+    <button class= videoscreen onclick= stop()>Stop</button>
+    <button class= videoscreen onclick= ff()>FF</button>
+    <button class= videoscreen onclick= rew()>Rew</button>
+    <button class= videoscreen onclick= forward()>forward</button>
+    <button class= videoscreen onclick= rewind()>Rewind</button> 
     </div>
     <br></br>
        <script>
@@ -138,7 +138,7 @@ margin: 30px; controls>
         var video= document.getElementById("videoscreen")[0];
         
         function play(){
-            video.'play()';
+            video.play();
         }
         function pause(){
             video.pause();
