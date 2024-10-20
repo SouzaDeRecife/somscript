@@ -136,10 +136,10 @@ margin: 30px; controls>
         var video= document.getElementById("videoscreen")[0];
         
         function play(){
-            video.play();
+            video.load();
         }
         function pause(){
-            video.pause();
+            video.playpause();
         }
         function stop(){
             video.pause();
