@@ -119,45 +119,20 @@ setInterval(newtime, 1000)
 <h2>Powered by <strong>Feitosa de Souza</strong></h2>
 </div>
 <br></br>
-<video Id= videoscreen; src="VID_2024-08-08-21-10-01-175.mp4"; width= 200px; margin-botton: 10px; display: block
-margin: 30px; controls>
-</video>
-    <br></br>
-    <button class= videoscreen onclick: "play()">Play</button>
-    <button class= videoscreen onclick: pause()>Pause</button>
-    <button class= videoscreen onclick: stop()>Stop</button>
-    <button class= videoscreen onclick: ff()>FF</button>
-    <button class= videoscreen onclick: rew()>Rew</button>
-    <button class= videoscreen onclick: forward()>forward</button>
-    <button class= videoscreen onclick: "rewind()">Rewind</button> 
-    <br></br>
+  <video id="vid" width= 200px>
+        <source src="VID_2024-08-08-21-10-01-175.mp4">
+    </video>
+    <div>
+        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
+    </div>
     <script>
-    
-        var video= document.getElementById("videoscreen")[0];
+        var video;
+        video= document.getElementById("vid");
         
         function play(){
-            video.load();
+        video.play();
         }
-        function pause(){
-            video.playpause();
-        }
-        function stop(){
-            video.pause();
-            video.currentTime(0);
-        }
-        function ff(){
-            video.playbackRate += 0.10;
-        }
-        function rew(){
-            video.playbackRate -= 0.10;
-        }
-        function forward(){
-            video.currentTime -=10;
-        }
-        function rewind(){
-            video.currentTime +=10;
-        }
-    </script>
+        </script>
 
 <br></br>
 <div>
