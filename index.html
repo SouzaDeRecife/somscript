@@ -123,16 +123,25 @@ setInterval(newtime, 1000)
         <source src="VID_2024-08-08-21-10-01-175.mp4">
     </video>
     <div>
-        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
-        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
-        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
-        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="playPause()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="makeBig()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="makeSmall()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="makeNormal()"><img src= "images (3).jpeg" height= "20px"></button>
     </div>
     <script>
         var video;
         video= document.getElementById("vid");
         
-        function play(){
+        function playPause(){
+        video.play();
+        }
+        function playPause(){
+        video.makeBig();
+    }
+        function playPause(){
+        video.play();
+        }
+        function playPause(){
         video.play();
         }
         </script>
