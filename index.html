@@ -118,7 +118,7 @@ setInterval(newtime, 1000)
 </video>
 
 <div class= botoesclasse display= block>
-        <button type="button" onclick="Play()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="Pause()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="Stop()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="Rewind()"><img src= "images (3).jpeg" height= "20px"></button>
@@ -127,15 +127,15 @@ setInterval(newtime, 1000)
         var video;
         video= document.getElementById("vid");
         
-        function Play(){
+        function play(){
         video.play();
         }
-        function Pause(){
-        video.Pause();
+        function pause(){
+        video.pause();
     }
-        function Stop(){
-        video.Pause();
-        video.CurrentTime = 0;
+        function stop(){
+        video.pause();
+        video.purrentTime = 0;
         
         </script>
 
