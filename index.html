@@ -121,7 +121,7 @@ setInterval(newtime, 1000)
         <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="pause()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="stop()"><img src= "images (3).jpeg" height= "20px"></button>
-        <button type="button" onclick="rewind()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="skip(-10)"><img src= "images (3).jpeg" height= "20px"></button>
 </div>
     <script>
         var video;
@@ -136,6 +136,9 @@ setInterval(newtime, 1000)
         function stop(){
             video.pause();
             video.currentTime= 0;
+        }
+        function skip(-10){
+            video.currentTime += 10;
         }
             
         </script>
